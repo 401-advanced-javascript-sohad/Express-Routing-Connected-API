@@ -36,7 +36,7 @@ function updateProduct(req,res,next){
 }
 
 function deleteProduct(req,res,next){
-    const message= 'deleted item';
+    const message= 'delete item';
     console.log('req.params.id : ', req.params.id);
     products.delete(req.params.id)
     .then(data=>{

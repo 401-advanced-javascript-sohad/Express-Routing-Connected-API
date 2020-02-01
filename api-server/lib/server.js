@@ -5,11 +5,8 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 
-// internal files
 const categoriesRoute = require('../routes/categoriesRoute.js');
 const productsRoute = require('../routes/productsRoute.js');
-
-// application constants
 const app = express();
 
 // 3rd party middleware

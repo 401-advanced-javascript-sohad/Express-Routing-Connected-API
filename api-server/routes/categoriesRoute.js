@@ -18,6 +18,12 @@ function getCategorie(req, res, next) {
     }).catch(next);
 }
 
+function updateCategorie(req,res,next){
+    categories.update(req.params.id,req.body)
+    .then(data=>{
+        res.status(201).json(data)
+    })
+}
 function postCategorie(req, res, next) {
     categories.create(req.body)
     .then(data => {
@@ -26,12 +32,6 @@ function postCategorie(req, res, next) {
     })
 }
 
-function updateCategorie(req,res,next){
-    categories.update(req.params.id,req.body)
-    .then(data=>{
-        res.status(201).json(data)
-    })
-}
 
 function deleteCategorie(req,res,next){
     const message= 'deleted item';s
