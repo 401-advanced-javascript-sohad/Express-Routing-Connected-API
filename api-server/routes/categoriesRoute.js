@@ -34,11 +34,19 @@ function updateCategorie(req,res,next){
 }
 
 function deleteCategorie(req,res,next){
+<<<<<<< HEAD
     const message= 'Item is deleted';s
     categories.delete(req.params.id)
     .then(data=>{
         res.status(200).json({message})
     })
+=======
+    const message= 'deleted item';s
+    categories.delete(req.params.id)
+    .then(data=>{
+        res.status(200).json({message})
+    }).catch((err)=>console.error("error",err));
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
 }
 
 module.exports = categoriesRouter;

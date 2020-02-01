@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "express-routing-connected-api",
+=======
+  "name": "Express-Routing-Connected-API",
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
   "version": "1.0.0",
   "description": "lab-08 :- Express Routing &amp; Connected API :star2: :star2:",
   "main": "index.js",
@@ -13,6 +17,10 @@
     "type": "git",
     "url": "git+https://github.com/401-advanced-javascript-sohad/Express-Routing-Connected-API.git"
   },
+<<<<<<< HEAD
+=======
+  "keywords": [],
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -23,6 +31,13 @@
     "@code-fellows/supergoose": "^1.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+<<<<<<< HEAD
+=======
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "mongo": "^0.1.0",
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
     "mongoose": "^5.8.10",
     "morgan": "^1.9.1"
   }

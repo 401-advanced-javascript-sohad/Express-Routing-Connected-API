@@ -3,8 +3,14 @@ const { server } = require('../lib/server.js');
 const supergoose = require('@code-fellows/supergoose');
 const mockRequest = supergoose(server);
 
+<<<<<<< HEAD
 describe('Categories >>>> CRUD', () => {
   it('post a new categorie item', () => {
+=======
+describe('Categories  CRUD', () => {
+  it('post a new categorie ', () => {
+    
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
     let testObj = { name: 'test name', display_name: 'test display_name', description: 'test description' };
     return mockRequest.post('/api/v1/categories')
       .send(testObj)
@@ -17,6 +23,7 @@ describe('Categories >>>> CRUD', () => {
       })
   });
 
+<<<<<<< HEAD
   // it('get a new categorie item', () => {
    
 
@@ -33,6 +40,8 @@ describe('Categories >>>> CRUD', () => {
 
   // });
 
+=======
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
 
   
 });

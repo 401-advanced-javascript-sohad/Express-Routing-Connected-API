@@ -36,12 +36,20 @@ function updateProduct(req,res,next){
 }
 
 function deleteProduct(req,res,next){
+<<<<<<< HEAD
     const message= 'Item is deleted';
+=======
+    const message= 'deleted item';
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
     console.log('req.params.id : ', req.params.id);
     products.delete(req.params.id)
     .then(data=>{
         res.status(200).json({message})
+<<<<<<< HEAD
     }).catch((err)=>console.error("asdsadsadsadsad",err));
+=======
+    }).catch((err)=>console.error("error",err));
+>>>>>>> 92c5a3bf8115d7096d15bf95a0277cb113208095
 }
 
 module.exports = productsRoute;
